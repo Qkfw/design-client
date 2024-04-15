@@ -5,8 +5,8 @@ import { getToken } from '@/utils/auth'
 
 // create an axios instance
 const service = axios.create({
-  baseURL: 'http://146.190.13.96:8080/api', // url = base url + request url
-  // withCredentials: true, // send cookies when cross-domain requests
+  baseURL: 'https://nas.fwqaq.us:6567/api', // url = base url + request url
+  withCredentials: true, // send cookies when cross-origin requests
   timeout: 10000 // request timeout
 })
 
