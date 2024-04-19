@@ -146,9 +146,9 @@ export default {
         repassword: [{ validator: validatorRepassword, trigger: 'blur' }]
       },
       passwordType: 'password',
-      // registerMode: false,
+      registerMode: false,
       capsTooltip: false,
-      // loading: false,
+      loading: false,
       redirect: undefined, // redirect 负责获取用户被跳转到登录页面前的页面，可以让用户登录后直接访问到想要访问的页面
       otherQuery: {}
     }
