@@ -95,12 +95,12 @@ export default {
 
 <style lang="scss" scoped>
 .table-title {
-  background-color: #fff;
+  background-color: #030000;
   padding: 20px;
   padding-bottom: 0px;
   font-size: 18px;
   font-weight: bold;
-  color: rgba($color: #000000, $alpha: 0.5);
+  color: rgba($color: #ffffff, $alpha: 0.5);
   display: flex;
   align-items: center;
   .icon {
@@ -109,7 +109,7 @@ export default {
   }
 }
 .table-wrapper {
-  background-color: #fff;
+  background-color: #030000;
   .bdge-wrapp {
     display: flex;
     justify-content: center;
@@ -123,7 +123,11 @@ export default {
       background-color: $color-success;
     }
   }
+  .el-table-column {
+    background-color: #030000;
+  }
 }
+
 a {
   color: $color-primary;
   &:hover {

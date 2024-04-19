@@ -7,7 +7,7 @@
         </el-col>
 
         <el-col :span="18" :xs="24">
-          <el-card>
+          <el-card style="background-color: #030000; color: white;">
             <el-tabs v-model="activeTab">
               <el-tab-pane label="账户信息" name="account">
                 <account />

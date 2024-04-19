@@ -75,7 +75,7 @@ export default {
   .group-item-wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #030000;
     cursor: pointer;
     transition: all ease 0.5s;
     padding: 20px 30px;

@@ -80,7 +80,7 @@
       </el-form-item>
       <!-- 确认密码 -->
 
-      <div style="display: flex; justify-content: space-between;">
+      <div style="display: flex; justify-content: center;">
         <!-- 登录按钮 -->
         <el-button
           v-if="!registerMode"
@@ -92,20 +92,20 @@
         <!-- 登录按钮 -->
 
         <!-- 注册按钮 -->
-        <el-button
+        <!-- <el-button
           v-if="registerMode"
           :loading="loading"
           type="primary"
           @click.native.prevent="handleRegister"
           >注册</el-button
-        >
+        > -->
         <!-- 注册按钮 -->
 
         <!-- 切换为注册 -->
-        <a class="toggle" @click="registerMode = !registerMode">
+        <!-- <a class="toggle" @click="registerMode = !registerMode">
           <el-button type="primary" v-if="!registerMode">学生注册</el-button>
           <el-button type="primary" v-else>返回登录</el-button>
-        </a>
+        </a> -->
       </div>
       <!-- 切换为注册 -->
     </el-form>
@@ -114,7 +114,7 @@
 </template>
 
 <script>
-import { register } from '@/api/user'
+// import { register } from '@/api/user'
 export default {
   name: 'Login',
   data() {
@@ -146,9 +146,9 @@ export default {
         repassword: [{ validator: validatorRepassword, trigger: 'blur' }]
       },
       passwordType: 'password',
-      registerMode: false,
+      // registerMode: false,
       capsTooltip: false,
-      loading: false,
+      // loading: false,
       redirect: undefined, // redirect 负责获取用户被跳转到登录页面前的页面，可以让用户登录后直接访问到想要访问的页面
       otherQuery: {}
     }
@@ -212,24 +212,24 @@ export default {
         }
       })
     },
-    handleRegister() {
-      this.$refs.loginForm.validate(valid => {
-        if (valid) {
-          this.loading = true
-          register({
-            account: this.loginForm.account,
-            password: this.loginForm.password
-          }).then(() => {
-            this.$message({ message: '注册成功', type: 'success' })
-            this.loading = false
-            this.registerMode = false
-          })
-        } else {
-          console.log('error submit!!')
-          return false
-        }
-      })
-    },
+    // handleRegister() {
+    //   this.$refs.loginForm.validate(valid => {
+    //     if (valid) {
+    //       this.loading = true
+    //       register({
+    //         account: this.loginForm.account,
+    //         password: this.loginForm.password
+    //       }).then(() => {
+    //         this.$message({ message: '注册成功', type: 'success' })
+    //         this.loading = false
+    //         this.registerMode = false
+    //       })
+    //     } else {
+    //       console.log('error submit!!')
+    //       return false
+    //     }
+    //   })
+    // },
     getOtherQuery(query) {
       return Object.keys(query).reduce((acc, cur) => {
         if (cur !== 'redirect') {

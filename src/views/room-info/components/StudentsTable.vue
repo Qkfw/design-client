@@ -1,6 +1,6 @@
 <template>
   <div class="StudentTable">
-    <el-table :data="tableData" style="width: 100%" :stripe="true">
+    <el-table :data="tableData" style="width: 100%">
       <el-table-column label="姓名">
         <template slot-scope="scope">
           <a @click="gotoUserDetail(scope.row.id)">{{ scope.row.name }}</a>

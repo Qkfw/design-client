@@ -5,7 +5,10 @@ import { getToken } from '@/utils/auth'
 
 // create an axios instance
 const service = axios.create({
-  baseURL: 'https://nas.fwqaq.us:6567/api', // url = base url + request url
+  baseURL:
+    process.env.NODE_ENV === 'development'
+      ? 'http://localhost:6566/api'
+      : 'https://nas.fwqaq.us:6567/api', // url = base url + request url
   withCredentials: true, // send cookies when cross-origin requests
   timeout: 10000 // request timeout
 })

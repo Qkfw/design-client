@@ -103,24 +103,27 @@ export default {
     font-weight: bold;
   }
   .center {
+    background-color: #030000;
     min-height: 100px;
     padding: 0 20px;
     padding-top: 20px;
+    color: #ffffff;
     box-sizing: content-box;
   }
   .bottom {
     padding: 20px;
     text-align: right;
-    color: rgba($color: #000000, $alpha: 0.5);
+    background-color: #030000;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 .tips {
-  background-color: #fff;
+  background-color: #030000;
   padding: 20px;
   text-align: center;
-  color: rgba($color: #000000, $alpha: 0.5);
+  color: rgba($color: #ffffff, $alpha: 0.5);
 }
 </style>

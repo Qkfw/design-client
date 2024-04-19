@@ -1,5 +1,7 @@
 <template>
-  <el-card style="margin-bottom:20px;">
+  <el-card
+    style="margin-bottom:20px; background-color: #030000; color: #ffffff;"
+  >
     <div slot="header" class="clearfix">
       <span>关于用户</span>
     </div>
@@ -12,7 +14,7 @@
           :width="'100px'"
           :hoverable="false"
         >
-          <div>Hello</div>
+          <div>你好，我是</div>
           {{ user.role }}
         </pan-thumb>
       </div>

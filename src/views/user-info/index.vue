@@ -162,13 +162,15 @@ export default {
 .userInfo-wrapper {
   .top {
     .roomInfo-card {
-      background-color: #fff;
+      background-color: #001818;
       padding: 30px;
+      color: #ffffff;
     }
     .userInfo-card {
-      background-color: #fff;
+      background-color: #001818;
       padding: 30px;
       height: 223px;
+      color: #ffffff;
       box-sizing: content-box;
       .title {
         font-weight: bold;
