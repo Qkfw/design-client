@@ -267,8 +267,17 @@ aside {
 }
 
 .el-dropdown-menu {
-  background-color: black;
+  background: #030000;
   color: #ffffff;
+}
+
+.el-dialog {
+  background-color: #606266;
+  color: #ffffff;
+}
+
+.el-loading-mask {
+  background: #030000;
 }
 
 .no-data-tips {

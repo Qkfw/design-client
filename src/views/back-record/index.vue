@@ -120,8 +120,9 @@ export default {
   .top-wrapper {
     display: flex;
     margin: 40px 0;
+    color: #ffff;
     .left-wrapper {
-      background-color: #fff;
+      background-color: #030000;
       border-radius: 5px;
       padding: 30px;
       display: flex;
@@ -129,7 +130,7 @@ export default {
       align-items: center;
     }
     .right-wrapper {
-      background-color: #fff;
+      background-color: #030000;
       margin-left: 20px;
       border-radius: 5px;
       width: 100%;
@@ -138,7 +139,7 @@ export default {
   }
   .botttom-wrapper {
     margin: 40px 0;
-    background-color: #fff;
+    background-color: #030000;
     border-radius: 5px;
     padding: 20px;
   }
