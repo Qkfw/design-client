@@ -8,7 +8,7 @@ const service = axios.create({
   baseURL:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:6567/api'
-      : 'https://nas.fwqaq.us:6567/api', // url = base url + request url
+      : 'https://shop.fwqaq.us:6567/api', // url = base url + request url
   withCredentials: true, // send cookies when cross-origin requests
   timeout: 100 * 1000 // request timeout
 })
